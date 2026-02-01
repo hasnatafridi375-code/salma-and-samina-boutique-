@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salma & Samina Boutique | Luxury Ladies Wear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">SALMA & SAMINA BOUTIQUE</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bridal.html">Bridal</a></li>
+                <li><a href="affordable.html">Casual</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="background-image: url('assets/hero.png');">
+        <div class="hero-content">
+            <h1 class="reveal">Luxury Ladies Wear</h1>
+            <p class="reveal">Elegance in every stitch. Inspired by Pakistani heritage.</p>
+            <a href="#collection" class="btn-add-cart"
+                style="width: auto; padding: 15px 40px; border-radius: 30px;">Explore Collection</a>
+        </div>
+    </section>
+
+    <main id="collection">
+        <h2 class="section-title reveal">Luxury Collection</h2>
+        <div class="product-grid" id="product-container">
+            <!-- Products will be injected here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Salma & Samina</div>
+                <p>Luxury Boutique in Dolmen Mall, Karachi. Specializing in Pakistani high-end fashion.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="bridal.html" style="color: white; text-decoration: none;">Bridal Collection</a></li>
+                    <li><a href="affordable.html" style="color: white; text-decoration: none;">Daily Wear</a></li>
+                    <li><a href="accessories.html" style="color: white; text-decoration: none;">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Dolmen Mall, DHA, Karachi</p>
+                <p>WhatsApp: 03450731223</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Salma & Samina Boutique. All Rights Reserved.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/03450731223" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const products = [
+            { id: 1, name: "Zia Luxury Pret", price: "PKR 28,500", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 2, name: "Noor Formal Silk", price: "PKR 35,000", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 3, name: "Meher Party Wear", price: "PKR 22,900", img: "assets/hero.png", category: "Party Wear" },
+            { id: 4, name: "Gul-e-Rana Velvet", price: "PKR 42,000", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 5, name: "Areeba Chiffon Bloom", price: "PKR 31,500", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 6, name: "Saba Organza Dream", price: "PKR 45,000", img: "assets/hero.png", category: "Party Wear" },
+            { id: 7, name: "Sanam Embroidered Suite", price: "PKR 18,500", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 8, name: "Farah Gold Edition", price: "PKR 39,000", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 9, name: "Maya Midnight Blue", price: "PKR 26,000", img: "assets/hero.png", category: "Party Wear" },
+            { id: 10, name: "Zara Pearlescent", price: "PKR 33,500", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 11, name: "Hira Royal Maroon", price: "PKR 44,000", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 12, name: "Sara Peach Glow", price: "PKR 21,500", img: "assets/hero.png", category: "Party Wear" },
+            { id: 13, name: "Ishma Emerald Pret", price: "PKR 29,500", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 14, name: "Amani Silk Rose", price: "PKR 37,000", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 15, name: "Kiran Golden Haze", price: "PKR 24,000", img: "assets/hero.png", category: "Party Wear" },
+            { id: 16, name: "Laila Desert Sand", price: "PKR 30,500", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 17, name: "Mariam Silver Dust", price: "PKR 41,000", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 18, name: "Nadia Evening Star", price: "PKR 25,500", img: "assets/hero.png", category: "Party Wear" },
+            { id: 19, name: "Oria Opal Pret", price: "PKR 27,000", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 20, name: "Pari Pastel Bliss", price: "PKR 36,000", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 21, name: "Qama Quartz Luxe", price: "PKR 23,000", img: "assets/hero.png", category: "Party Wear" },
+            { id: 22, name: "Ruh Rani Pink", price: "PKR 38,000", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 23, name: "Sia Sunrise Gold", price: "PKR 43,500", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 24, name: "Tara Teal Night", price: "PKR 22,000", img: "assets/hero.png", category: "Party Wear" },
+            { id: 25, name: "Umber Umber Glow", price: "PKR 32,000", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 26, name: "Vanya Velvet Noir", price: "PKR 45,000", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 27, name: "Warda Winter Rose", price: "PKR 20,500", img: "assets/hero.png", category: "Party Wear" },
+            { id: 28, name: "Xara X-Factor Formal", price: "PKR 40,000", img: "assets/pret.png", category: "Luxury Pret" },
+            { id: 29, name: "Yara Yellow Silk", price: "PKR 34,000", img: "assets/formal.png", category: "Formal Wear" },
+            { id: 30, name: "Zeba Zen Garden", price: "PKR 19,500", img: "assets/hero.png", category: "Party Wear" },
+            { id: 31, name: "Asha Antique Gold", price: "PKR 45,000", img: "assets/pret.png", category: "Luxury Pret" }
+        ];
+
+        const container = document.getElementById('product-container');
+
+        products.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'product-card reveal';
+            card.innerHTML = `
+                <img src="${p.img}" alt="${p.name}" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">${p.category}</div>
+                    <h3 class="product-name">${p.name}</h3>
+                    <div class="product-price">${p.price}</div>
+                    <a href="https://wa.me/03450731223" class="btn-add-cart">Add to Cart</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+
+        // Simple Reveal Logic
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+    </script>
+</body>
+
+</html>

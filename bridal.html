@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridal Collection | Salma & Samina Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">SALMA & SAMINA BOUTIQUE</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bridal.html">Bridal</a></li>
+                <li><a href="affordable.html">Casual</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="background-image: url('assets/bridal1.png'); height: 60vh;">
+        <div class="hero-content">
+            <h1 class="reveal">Bridal Collection</h1>
+            <p class="reveal">Timeless elegance for your special day.</p>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title reveal">Heavy Bridal Ensemble</h2>
+        <div class="product-grid" id="bridal-container">
+            <!-- Bridal products will be injected here -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Salma & Samina</div>
+                <p>Luxury Boutique in Dolmen Mall, Karachi. Specializing in Pakistani high-end fashion.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="bridal.html" style="color: white; text-decoration: none;">Bridal Collection</a></li>
+                    <li><a href="affordable.html" style="color: white; text-decoration: none;">Daily Wear</a></li>
+                    <li><a href="accessories.html" style="color: white; text-decoration: none;">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Dolmen Mall, DHA, Karachi</p>
+                <p>WhatsApp: 03450731223</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Salma & Samina Boutique. All Rights Reserved.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/03450731223" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const bridals = [
+            { name: "Royal Red Lehenga", price: "PKR 450,000", img: "assets/bridal1.png", cat: "Traditional Bridal" },
+            { name: "Maroon Velvet Maxi", price: "PKR 320,000", img: "assets/bridal2.png", cat: "Luxury Bridal" },
+            { name: "Golden Glow Sharara", price: "PKR 280,000", img: "assets/formal.png", cat: "Formal Bridal" },
+            { name: "Deep Pink Saree", price: "PKR 180,000", img: "assets/bridal1.png", cat: "Classic Bridal" },
+            { name: "Antique Gold Lehenga", price: "PKR 410,000", img: "assets/bridal2.png", cat: "Heritage Bridal" },
+            { name: "Crimson Couture", price: "PKR 350,000", img: "assets/formal.png", cat: "Modern Bridal" },
+            { name: "Emerald Queen Maxi", price: "PKR 290,000", img: "assets/bridal1.png", cat: "Luxury Bridal" },
+            { name: "Pearl White Nikah Suit", price: "PKR 120,000", img: "assets/bridal2.png", cat: "Bridal Wear" }
+        ];
+
+        const container = document.getElementById('bridal-container');
+
+        bridals.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'product-card reveal';
+            card.innerHTML = `
+                <img src="${p.img}" alt="${p.name}" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">${p.cat}</div>
+                    <h3 class="product-name">${p.name}</h3>
+                    <div class="product-price">${p.price}</div>
+                    <a href="https://wa.me/03450731223" class="btn-add-cart">Inquire Now</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+    </script>
+</body>
+
+</html>
