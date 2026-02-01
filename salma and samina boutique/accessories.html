@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladies Accessories | Salma & Samina Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .placeholder-icon {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0ede6;
+            color: var(--accent);
+            font-size: 5rem;
+            border-radius: 2px;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">SALMA & SAMINA BOUTIQUE</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bridal.html">Bridal</a></li>
+                <li><a href="affordable.html">Casual</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-title" style="margin-top: 120px;">
+        <h2 class="reveal">Ladies Accessories</h2>
+        <p class="reveal" style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-top: 10px;">
+            Exquisite finishing touches</p>
+    </section>
+
+    <main>
+        <div class="product-grid">
+            <div class="product-card reveal">
+                <img src="assets/accessories.png" alt="Luxury Velvet Gloves" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Hand Wear</div>
+                    <h3 class="product-name">Luxury Velvet Gloves (Dastanay)</h3>
+                    <div class="product-price">PKR 2,500</div>
+                    <a href="https://wa.me/03450731223" class="btn-add-cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <img src="assets/accessories.png" alt="Embroidered Socks" class="product-image"
+                    style="filter: hue-rotate(45deg);">
+                <div class="product-info">
+                    <div class="product-category">Footwear</div>
+                    <h3 class="product-name">Embroidered Cotton Socks (Moze)</h3>
+                    <div class="product-price">PKR 1,200</div>
+                    <a href="https://wa.me/03450731223" class="btn-add-cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <img src="assets/accessories.png" alt="Silk Evening Gloves" class="product-image"
+                    style="filter: sepia(0.5);">
+                <div class="product-info">
+                    <div class="product-category">Hand Wear</div>
+                    <h3 class="product-name">Silk Evening Gloves</h3>
+                    <div class="product-price">PKR 1,800</div>
+                    <a href="https://wa.me/03450731223" class="btn-add-cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <img src="assets/accessories.png" alt="Beaded Party Socks" class="product-image"
+                    style="filter: grayscale(0.5);">
+                <div class="product-info">
+                    <div class="product-category">Footwear</div>
+                    <h3 class="product-name">Beaded Party Socks</h3>
+                    <div class="product-price">PKR 800</div>
+                    <a href="https://wa.me/03450731223" class="btn-add-cart">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Salma & Samina</div>
+                <p>Luxury Boutique in Dolmen Mall, Karachi. Specializing in Pakistani high-end fashion.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="bridal.html" style="color: white; text-decoration: none;">Bridal Collection</a></li>
+                    <li><a href="affordable.html" style="color: white; text-decoration: none;">Daily Wear</a></li>
+                    <li><a href="accessories.html" style="color: white; text-decoration: none;">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Dolmen Mall, DHA, Karachi</p>
+                <p>WhatsApp: 03450731223</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Salma & Samina Boutique. All Rights Reserved.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/03450731223" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+    </script>
+</body>
+
+</html>

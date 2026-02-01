@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Salma & Samina Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-container {
+            max-width: 1000px;
+            margin: 150px auto 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 0 2rem;
+        }
+
+        .contact-info h1 {
+            font-size: 3.5rem;
+            color: var(--secondary);
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            width: 30px;
+        }
+
+        .info-item div h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+
+        .info-item div p {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+        }
+
+        .map-section {
+            background: #fdfbf7;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .map-box {
+            width: 100%;
+            height: 400px;
+            background: #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-style: italic;
+            border: 1px solid var(--accent);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            background: transparent;
+            font-family: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">SALMA & SAMINA BOUTIQUE</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bridal.html">Bridal</a></li>
+                <li><a href="affordable.html">Casual</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-info reveal">
+            <h1>Get In Touch</h1>
+            <p style="margin-bottom: 3rem; font-weight: 300;">We'd love to hear from you. Visit our boutique or reach
+                out via WhatsApp for personalized styling and bridal inquiries.</p>
+
+            <div class="info-item">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Dolmen Mall, DHA, Karachi, Pakistan</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <h4>WhatsApp / Call</h4>
+                    <p>03450731223</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>info@salmasamina.com</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h4>Follow Us</h4>
+                <div class="social-links" style="justify-content: flex-start; margin-left: 0;">
+                    <a href="#" style="color: var(--text-dark);"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="color: var(--text-dark);"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="color: var(--text-dark);"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form reveal">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Subject (e.g. Bridal Inquiry)">
+            <textarea rows="6" placeholder="Your Message"></textarea>
+            <button class="btn-add-cart" style="cursor: pointer; border: none;">Send Message</button>
+        </div>
+    </div>
+
+    <section class="map-section reveal">
+        <h2 class="section-title">Visit Our Boutique</h2>
+        <div class="map-box"
+            style="background-image: url('https://api.mapbox.com/styles/v1/mapbox/light-v10/static/marker-r+secondary(67.05,24.81)/67.05,24.81,14,0/800x400?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.r_dC71t14n-n4-X_v4n1Kg'); background-size: cover; background-position: center;">
+            <div
+                style="background: rgba(255,255,255,0.8); padding: 20px; border-radius: 4px; color: var(--secondary); font-weight: 600;">
+                Dolmen Mall, DHA Karachi
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Salma & Samina</div>
+                <p>Luxury Boutique in Dolmen Mall, Karachi. Specializing in Pakistani high-end fashion.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="bridal.html" style="color: white; text-decoration: none;">Bridal Collection</a></li>
+                    <li><a href="affordable.html" style="color: white; text-decoration: none;">Daily Wear</a></li>
+                    <li><a href="accessories.html" style="color: white; text-decoration: none;">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Dolmen Mall, DHA, Karachi</p>
+                <p>WhatsApp: 03450731223</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Salma & Samina Boutique. All Rights Reserved.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/03450731223" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+    </script>
+</body>
+
+</html>
